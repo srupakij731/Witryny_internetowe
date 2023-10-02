@@ -1,7 +1,7 @@
 
 const addNewLine = (text) => {
    
-    let paragraph = document.createElement("p");
+    let paragraph = document.createElement("li");
 
     paragraph.innerText = text;
     numbersList.appendChild(paragraph);
@@ -10,7 +10,7 @@ const addNewLine = (text) => {
 const numberText = prompt("podaj liczbe: ");
 const number = parseFloat(numberText);
 
-const numbersList = document.getElementById("this");
+const numbersList = document.getElementById("output");
 
 addNewLine(number);
 addNewLine(-number);
@@ -25,5 +25,5 @@ addNewLine(Math.floor(number/3));
 addNewLine(Math.ceil(number/3));
 addNewLine(Math.round(number));
 addNewLine(Math.sqrt(number));
-addNewLine(number * Math.floor(Math.random() * 51));
+addNewLine(number * Math.random()*50);
 addNewLine(Math.abs(number));
