@@ -1,0 +1,12 @@
+figure{
+    float: left;
+}
+hr {
+    clear: left;
+}
+.grey{
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background-color: lightslategray;
+}
