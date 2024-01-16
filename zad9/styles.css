@@ -1,0 +1,39 @@
+header{
+    float: left;
+    background-color: crimson;
+    width: 100%;
+    height: 140px;
+    margin: 10px, 10px, 10px, 10px;
+}
+
+.section{
+    float: left;
+    background-color: grey;
+    height: 200px;
+    width: 28%;
+    margin: 10px;
+
+}
+
+.content{
+    float: left;
+    background-color: rgb(255, 255, 0);
+    height: 200px;
+    width: 40%;
+    margin: 10px;
+}
+
+footer{
+    float: left;
+    background-color: rgb(57, 114, 3);
+    width: 100%;
+    height: 140px;
+    margin: 10px, 10px, 10px, 10px;
+}
+
+#footerDate{
+    float: right;
+}
+#footerLastModified{
+    float: left;
+}
