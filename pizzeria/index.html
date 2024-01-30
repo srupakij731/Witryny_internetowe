@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Margherita</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <header id="banner">
+        <h2><p id = "napis">Najleprzaq pizzeria na świecie</p>
+        <img src="logo.png" height="100px" id="XD">
+
+        </h2>
+    </header>
+    <section id="left">
+        <p>U nas zamówisz pizze z dowozem</p>
+        <a href="logo.png"> Nasze logo</a>
+    </section>
+    <section id="middle">
+        <h3>Pizzeria Margherita</h3>
+        <p>ul. Botaniczna 4, Zielona Góra</p>
+    </section>
+    <section id="right">
+        <h3>Oferta</h3>
+        <ol>
+            <li>Pizza</li>
+            <li>Lasagne</li>
+            <li>Sałatki</li>
+        </ol>
+        <p><a href="Oferta.txt">Pobierz pełną ofertę</a></p>
+    </section>
+    <section id="bottom">
+        <h3>Oblicz koszt dostawy</h3>
+        <form>
+            <input type="checkbox" id="czyZielona"> Jestem z Zielonej Góry
+            <p>albo</p>
+            Podaj liczbę kilometrów od Zielonej Góry:
+             <input type="number" id="odleglosc">
+            <br>
+            <button onclick="oblicz()" type="button" >Oblicz</button>
+            <p id = "wynik"></p>
+        </form>
+    </section>
+    <footer id="footer">
+        Stronę internetową opracował: <b>PESEL</b>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
