@@ -1,0 +1,70 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#banner{
+    background-color: #824555;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#left, #middle{
+    background-color: #A26475;
+    color: white;
+    width: 30%;
+    height: 300px;
+    float: left;
+
+}
+
+#right{
+    background-color: #A26475;
+    color: white;
+    width: 40%;
+    height: 300px;
+    text-align: right;
+    display: flex;
+
+
+}
+#main{
+    background-color: #F0EAE2;
+    padding: 50px;
+
+}
+
+#footer{
+    background-color: #824555;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+
+table,td,th{
+    border: solid 2px #69293A ;
+    padding: 7px;
+    border-collapse: collapse;
+}
+ul{
+    list-style-type: square;
+}
+
+button {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#button1{
+    background-color: red;
+}
+#button2{
+    background-color: green;
+}
+#button3{
+    background-color: blue;
+}
