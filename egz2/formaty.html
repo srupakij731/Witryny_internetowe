@@ -56,22 +56,22 @@
 
     <div id = "main">
         <p>Podaj rozmiar tekstu w proscentach: 
-            <input type="number"> %
+            <input type="number" id="size"> %
         </p>
 
         <p>
-            <select>
-                <option>prosty</option>
-                <option>kursywa</option>
+            <select id= "type">
+                <option value="straight">prosty</option>
+                <option value="notStraight">kursywa</option>
             </select>
         </p>
         <p>
             Jakim kolorem sformatować tekst?  Wybierz przycisk<br>
-            <button id="button1"></button>
-            <button id="button3"> </button>
-            <button id="button2"> </button>
+            <button id="button1" onclick="changeParagraph('red')"></button>
+            <button id="button3" onclick="changeParagraph('blue')"> </button>
+            <button id="button2" onclick="changeParagraph('green')"> </button>
         </p>
-        <p>
+        <p id="paragraph">
             To jest przykład paragrafu, który może być dowolnie formatowany przez JavaScript
         </p>
     </div>
@@ -83,6 +83,6 @@
         </p>
         <a href="https://www.formatowanie.pl" target="_blank">odwiedź także</a>
     </div>
-
+<script src="script.js"></script>
 </body>
 </html>
