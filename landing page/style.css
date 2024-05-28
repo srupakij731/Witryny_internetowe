@@ -1,0 +1,278 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #F7F7F7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#section1{
+    background-color: #F7F7F7;
+    border-top: 1px solid #F0F0F0;
+    height: 600px;
+}
+header {
+    background-color: white;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    margin-top: 3px;
+    height: 70px;
+    
+}
+
+header p {
+    font-size: x-large;
+}
+
+
+
+#img {
+    height: 550px;
+    background-image: url('elektryk.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 55%;
+    margin: 20px;
+}
+
+#welcome {
+    width: 45%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#welcome h1{
+    font-size: xx-large;
+    color:#670500;
+}
+
+#list{
+    text-align:left;
+    flex-direction: column;
+}
+
+
+#section1 input {
+    margin: 30px;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: larger;
+    border-color: darkgoldenrod;
+    }
+#signIn{
+    font-size: x-large; 
+    color: #7d0211;
+    font-weight: bold;
+}
+#section2{
+    height: 1200px;
+    padding-top: 10px;
+}
+#section2 h1
+{
+font-size: xx-large;
+}
+
+#aboutUs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.info {
+    width: 33%;
+    height: 450px;
+    position: relative;
+    margin: 20px;
+    transition: filter 0.3s;
+    overflow: hidden; 
+}
+.info:hover{
+    filter: grayscale(29%);
+}
+
+.info:hover .imgOverlay{
+opacity: 1;
+height: 80%;
+
+}
+
+.imgOverlay {
+    all:unset;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: height 0.5s, opacity 0.5s;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 28px;
+}
+
+
+#nauczyciele, #sport, #event, #competition, #engaged_class, #trip {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#nauczyciele {
+    background-image: url('qualified_teachers.jpg');
+}
+#sport{
+    background-image: url('sport.jpg');
+}
+#event{
+    background-image: url('event.jpg');
+}
+#competition{
+    background-image: url('competition.jpg');
+}
+#engaged_class{
+    background-image: url('engaged_class.jpg');
+}
+#trip{
+    background-image: url('trip.jpg');
+}
+
+
+#section3 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+
+#section3 h2 {
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+   align-self: baseline;
+   scale: 1.5;
+
+}
+#red{
+    color: #670500;
+}
+
+#yellow{
+    color: #F1C40F;
+}
+
+.technician {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid darkred;
+    border-radius: 10px;
+    height: 400px;
+    background-image: url(lol.jpg);
+}
+
+.technician img{
+    height: 100px;
+}
+
+.technician p {
+    word-break: break-all;
+    white-space: normal;
+}
+.technician h3 {
+    margin-bottom: 10px;
+    color: darkred;
+}
+
+.technician p {
+    word-wrap: break-word; 
+}
+
+.vocational{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #F1C40F;
+    border-radius: 10px;
+    height: 400px;
+    background-image: url(lol.jpg);
+
+}
+.vocational img{
+    height: 100px;
+}
+
+.vocational p {
+    word-break: break-all;
+    white-space: normal;
+}
+.vocational h3 {
+    margin-bottom: 10px;
+    color: #F1C40F;
+
+}
+
+.vocational p {
+    word-wrap: break-word; 
+}
+.flexbox {
+    display: flex;
+    justify-content: center;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    height: 130px;  
+    background-color: #666666;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p {
+    padding: 15px;
+}
+
+footer .textContainer {
+    display: flex;
+    flex-direction:row;
+}
+
+footer img{
+    justify-self: right;
+    height: 80%;
+    padding-top: 8px;
+    padding-right: 20px;
+}
