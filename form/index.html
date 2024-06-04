@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    zad1
+    <form name="form1">
+      <input type="number" name="amoutOfGuests" onchange="zad1()"  placeholder="ilość gości"/><br />
+      poprawiny?
+      <input type="checkbox" name="champagneBreakfast" onchange="zad1()" />
+    </form>
+    <p id="zad1"></p>
+    <br />
+    zad2
+    <form name="form2">
+      <input
+        type="number"
+        name="distance"
+        onchange="zad2()"
+        placeholder="ile km"
+      /><br />
+      Jesteś z gdańska?
+      <input type="checkbox" name="isFromDanzig" onchange="zad2()" />
+    </form>
+    <br />
+    <p id="zad2"></p>
+    <br />
+    zad3
+    <br />
+    <form name="form3">
+      <input type="number" name="number1"  onchange="zad3()"   placeholder="a" required/><br />
+      <input type="number" name="number2"onchange="zad3()" placeholder="b"required/><br />
+    <button type="button" onclick="zad3('+')">+</button>
+    <button type="button" onclick="zad3('-')">-</button>
+    <button type="button" onclick="zad3('*')">*</button>
+    <button type="button" onclick="zad3('/')">/</button>
+    <button type="button" onclick="zad3('%')">%</button>
+    <button type="button" onclick="zad3('/c')">/całkowite</button>
+    </form>
+    <p id="zad3"></p>
+<br>
+zad4
+<br>
+
+<form name="form4">
+  <input type="number" name="number0" onchange="zad4()"><input type="checkbox" name="use0" onchange="zad4()"><br>
+  <input type="number" name="number1" onchange="zad4()"><input type="checkbox" name="use1" onchange="zad4()"><br>
+  <input type="number" name="number2" onchange="zad4()"><input type="checkbox" name="use2" onchange="zad4()"><br>
+  <input type="number" name="number3" onchange="zad4()"><input type="checkbox" name="use3" onchange="zad4()"><br>
+  <input type="number" name="number4" onchange="zad4()"><input type="checkbox" name="use4" onchange="zad4()"><br>
+</form>
+<p id="zad4"></p>
+
+<br>
+zad5
+<br>
+<form name="form5">
+  <label for="amoutOfAnnouncements">liczba ogłoszeń</label>
+  <input type="number" name="amoutOfAnnouncements" min="1" onchange="zad5()">
+  <label for="regularCustomer">stały klient</label>
+  <input type="checkbox" name="regularCustomer" onchange="zad5()">
+</form>
+<p id="zad5"></p>
+
+<br>
+zad6
+<br>
+<form name="form6">
+  <input type="number" name="amoutOfBricks"   placeholder="ilośc cegieł"/><br />
+  Cegły premium?
+  <input type="checkbox" name="premiumBricks"  />
+  <button type="button" onclick="zad6()"> oblicz</button>
+</form>
+<p id="zad6"></p>
+
+    <script src="srcript.js"></script>
+  </body>
+</html>
