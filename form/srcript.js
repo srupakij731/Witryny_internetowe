@@ -6,7 +6,7 @@ function zad1() {
   } else {
     document.getElementById("zad1").innerHTML = amountOfGuests*100;
   }
-}
+} 
 
 function zad2() {
   var distance = document.forms["form2"].distance.value;
