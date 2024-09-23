@@ -1,9 +1,0 @@
-
-	 najtańsza	najdroższa
- 
-home.pl  3198		7 292
-kei.pl   2000		4000
-iq.pl    1600		12500
-
-dla małej firmy iq.pl
-dla dużej kei.pl albo negocjować cene
