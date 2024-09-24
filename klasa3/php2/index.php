@@ -59,6 +59,7 @@ echo $b;
 else
 echo $c;
 
+echo"<br>";
 //8
 if($a > $b && $a > $c)
 {
@@ -92,19 +93,38 @@ echo"<br>";
 $birthYear= 2008;
 $year = 2024;
 if($year - $birthYear >=18)
-echo "pełnoletni";
+echo "pełnoletni<br>";
 else
-echo "niepełnoletni";
+echo "niepełnoletni<br>";
 
 //10
+$number = 18; 
+$digit2 = $number % 10;
+$digit1 = $number - $digit2; 
+
+
+if ($digit1 % 2 == 0 && $digit2 % 2 == 0) {
+    echo "parzyste<br>";
+} else if (($digit1 + $digit2) == 4) {
+    echo "Suma wynosi 4<br>";
+} else {
+    echo "nieparzyste i suma nie wynosi 4<br>";
+}
 
 //11
 $points = 50;
-if($points<29)
-{
-
-
-}
+if($points<=29)
+echo "niedostateczny";
+elseif($points >=30 && $points <=59)
+echo "duszczający";
+elseif($points >=60 && $points <=74)
+echo "dostateczny";
+elseif($points >=75 && $points <=89)
+echo "dobry";
+elseif($points >=90 && $points <=99)
+echo "bardzo dobry";
+else
+echo "celujący";
 ?>
 </body>
 </html>
