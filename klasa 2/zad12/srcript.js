@@ -1,3 +1,4 @@
+
 function zad1() {
   var amountOfGuests = document.forms["form1"].amoutOfGuests.value;
   if (document.forms.form1["champagneBreakfast"].checked) {
@@ -75,8 +76,43 @@ function zad5()
 function zad6()
 {
   var amoutOfBricks = document.forms.form6.amoutOfBricks.value; 
+  var distance = document.forms.form6.distance.value;
   if(document.forms.form6.premiumBricks.checked)
-    document.getElementById("zad6").innerHTML = "Zakupiona ilość cegieł: "+amoutOfBricks + " cegła premium, koszt zakupu cegieł: " +amoutOfBricks*2*1.3   + " waga cegieł: " + amoutOfBricks*1.75;
+  {
+    var weight =  amoutOfBricks*1.75;
+    document.getElementById("zad6").innerHTML = "Zakupiona ilość cegieł: "+amoutOfBricks + " cegła premium, koszt zakupu cegieł: " +amoutOfBricks*2*1.3 
+      + " waga cegieł: " + weight + " cena dowozu: " + weight*0.5 * distance;
+  }
   else
-  document.getElementById("zad6").innerHTML = "Zakupiona ilość cegieł: "+amoutOfBricks + " cegła zwykłą, koszt zakupu cegieł: " +amoutOfBricks*2+ " waga cegieł: " + amoutOfBricks*1.5;
+  {
+    var weight =  amoutOfBricks*1.5;
+    
+    document.getElementById("zad6").innerHTML = "Zakupiona ilość cegieł: "+amoutOfBricks + " cegła zwykłą, koszt zakupu cegieł: "
+     +amoutOfBricks*2+ " waga cegieł: " + weight + " cena dowozu: " + weight*0.5 * distance;
+
+  }
+}
+
+function zad8()
+{
+  var normal = document.forms.form8.normal.value;
+  var kids = document.forms.form8.kids.value;
+  var time = document.forms.form8.time.value;
+  var card = document.forms.form8.card.checked;
+  var total = 0;
+
+  normal -= Math.floor(kids / 15);
+  if(time >4)
+  {
+    total = normal*50 + kids*25;
+  }
+  else
+  {
+    total = (normal*10*time) + kids*5*time;
+  }
+  if(card)
+  {
+    total *= 0.9;
+  }
+  document.getElementById("zad8").innerHTML = "całkowity koszt wynosi " + total;
 }
