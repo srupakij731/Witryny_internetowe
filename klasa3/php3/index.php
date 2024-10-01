@@ -121,5 +121,39 @@
 
     }
     ?>
+<!-- 12 -->
+    <form method="post" action="">
+        <input type="number" id="number" name="number" placeholder="number " required>
+        <input type="submit" name="submit4" value="wyślij">
+    </form>
+<?php
+if(isset($_POST['submit4']))
+{
+    $number = $_POST['number'];
+    $sum = 1;
+    for ($i=1; $i <= $number; $i++) {
+        $sum *= $i; 
+    }
+    echo $sum."<br>";
+}
+?>
+
+<!-- 13 -->
+<form method="post" action="">
+        <input type="number" id="number" name="number" placeholder="number " required>
+        <input type="number" id="amount" name="amount" placeholder="amount " required>
+        <input type="submit" name="submit5" value="wyślij">
+    </form>
+<?php
+if(isset($_POST['submit5']))
+{
+    $number = $_POST['number'];
+    $amount = $_POST['amount'];
+
+    for ($i=$number; $i < $amount+$number; $i++) {
+        echo $i*$i." ";
+    }
+}
+?>
 </body>
 </html>
